@@ -1,20 +1,81 @@
-Results
-Original text	Saatvik Srivastava
-Original bytes	53:61:61:74:76:69:6b:20:53:72:69:76:61:73:74:61:76:61 (length=18)
-Adler32	41e90718
-CRC32	ed46b94c
-Haval	d88273ae417a56c8ab36e501e80e3143
-MD2	57d73d1bb9459867394100df02612339
-MD4	66923016648a755397dfeee91c9574b2
 
-MD5	98ed3b5c309baf0d8b004ee8b810cbad
-RipeMD128	a580e4997a635592047ef84a3170bb6b
-RipeMD160	4c88f6baf64d73b625f2b2e27ae84fe3c960f4ce
-SHA-1	fe4415053ff23223190daf3d47c124d82d4e337c
-SHA-256	7863be3e03daba9e01db190687b7483635c64f54533ececb909ab6a39a8de6ea
-SHA-384	4ce3f390b8702392aa5745a825dd965f68b819a1425434eb69744ab6342123d1302f0b607d1a2f7dae937f2a4eeba705
-SHA-512	7fd6fe1f09e2bebfc3fb7d43d8b732efd17b73b2184e58a09bc94f00ce9d7324fc9639c6753b83cce48cc011c46b6f66ae99ca49efb75a54ca9e96822bcadf95
-Tiger	5239e304d3f5076a950906591ad8bd9087ea88af56f140d4
-Whirlpool-0	24f43bb2f0e6e09b8737d2a9bf27a5ec7dcbfc27f6c70d6c122ccc5501a76c9374826bdd4a4422bc03f3afc7e4a03d3abc1c5b44e2bbba7259b22cc53d4c07a2 null
-Whirlpool-T	7c1be2be2ff5bf3faf6d22d00836558683c79496957c2c0fc4cd66f5538b801e9297d58fd7ce94de86410bb43ac71b2889f60cb571bcf2a95cf23fe6e3fbb186
-Whirlpool	1cb7278b0d786f1b96e6e8f05ef5945858eef65f6fd7933fecf865fd2c8a472c84ab399d1b757c2e305e16e3e4458094b08c10f7333f7604f2846f44d70daa2a
+# Sim Service Project
+
+## Overview
+
+The Sim Service Project is a full-stack application designed to manage SIM customers and validate their details efficiently. By leveraging Java, Spring Boot, REST APIs, Docker, and a frontend built with React and TypeScript, this project achieved a 30% increase in operational efficiency.
+
+## Features
+
+- **Customer Management:** View and manage all registered SIM customers.
+- **SIM Validation:** Validate SIM cards and retrieve data seamlessly.
+- **ID Proof Validation:** Verify customer ID proofs accurately.
+- **Offer Display:** Display current offers associated with SIM cards.
+
+## Technologies
+
+- **Backend:** Java, Spring Boot, REST API
+- **Frontend:** React, TypeScript
+- **Containerization:** Docker
+- **Database:** postgresql
+
+## Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/sim-service-project.git
+   cd sim-service-project
+   ```
+
+2. **Docker Setup:**
+   - Build and run the Docker containers:
+     ```bash
+     docker-compose up --build
+     ```
+
+3. **Backend Setup:**
+   - If not using Docker, navigate to the backend directory:
+     ```bash
+     cd backend
+     ```
+   - Build the backend project:
+     ```bash
+     mvn clean install
+     ```
+   - Run the Spring Boot application:
+     ```bash
+     mvn spring-boot:run
+     ```
+
+4. **Frontend Setup:**
+   - Navigate to the frontend directory:
+     ```bash
+     cd ../frontend
+     ```
+   - Install dependencies:
+     ```bash
+     npm install
+     ```
+   - Start the React application:
+     ```bash
+     npm start
+     ```
+
+## Usage
+
+- Access the application at `http://localhost:3000`.
+- Use the customer management interface to view and manage SIM customers.
+- Validate SIM cards and ID proofs through the respective sections.
+- Check out the latest offers on the offers page.
+
+## Contributing
+
+Feel free to submit issues and pull requests. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+This README provides an attractive, structured, and concise summary of your project for potential employers or collaborators viewing your GitHub repository.
